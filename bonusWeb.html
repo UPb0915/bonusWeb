@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI達文西機械手臂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="header-content" class="header-content wrapper-content">
+            
+            <div id="hamburger" class="wrapper-hamburger">
+                <div class="cross-button-top cross-button"></div>
+                <div class="cross-button-bottom cross-button"></div>
+                <img src="logo.png" alt="nccu" width="185px" height="auto">
+            </div>
+            <nav class="header-nav">
+               <a href="javascript:void(0);" class="link-text" onclick="show1Alert()">設備簡介</a>
+               <a href="javascript:void(0);" class="link-text" onclick="show2Alert()">目前應用</a>
+                <a href="javascript:void(0);" class="link-text" onclick="show3Alert()">優勢</a>
+                <a href="javascript:void(0);" class="link-text" onclick="show4Alert()">潛在問題</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section-primary">
+            <div class="primary-content wrapper-content">
+                <div class="wrapper-primary-text">
+                    <h2 class="primary__title section__title"><span class="section__title">AI</span><br>達文西手臂</h2>
+                    <p class="primary__text">
+                        達文西機械手臂（da Vinci Surgical System）是一種先進的機械手術系統，廣泛應用於微創手術中，幫助醫生進行更精確和有效的操作。這個系統由美國Intuitive Surgical公司開發，旨在提供比傳統手術方法更高的準確度和靈活性。
+                    </p>
+                    <a href="https://youtu.be/2LPV53Tv5qg" class="primary__link-button link-button">介紹影片</a>
+                </div>
+                <img class="primary__main-img" src="達文西機械手臂.jpg" alt="達文西機械手臂">
+            </div>
+        </section>
+        <section class="section-selected-works">
+            <div class="secondary-content wrapper-content">
+                <h2 class="secondary__title section__title">我們可以利用AI，來處理潛在問題</h2>
+                <div class="wrapper-selected-works">
+                    <div class="wrapper-work">
+                        <img src="力感測器.jpg" alt="力感測器">
+                        <div class="wrapper-work-text">
+                            <h3 class="work__title">機器學習結合力感測器</h3>
+                            <div>數據收集：使用力感測器測量手術工具施加在不同組織上的力學數據，如：壓力、剪切力、彈性。<br><br>資料標記：給數據添加標籤，定義不同組織的物理特性。舉例：肌肉的彈性較高，而腫瘤則彈性較差。<br><br>機器學習模型訓練：使用模型（如神經網絡）學習組織的力學特性與觸覺回饋的關聯。輸出一個觸覺回饋模型，能在實時操作中模擬真實的觸覺回饋。</div>
+                            <a href="neural-network-diagram.webp" class="work__link-button link-button">神經網路</a>
+                            <div>or <a href="https://www.canva.com/design/DAGYxTUmTjw/v2j4u4bkLiaUJySOZrGvaA/view?utm_content=DAGYxTUmTjw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4dec3beef9" class="work__link link-text">查看我們的簡報以獲取更多資訊</a></div>
+                        </div>
+                    </div>
+                    <div class="wrapper-work">
+                        <img src="數據.webp" alt="數據">
+                        <div class="wrapper-work-text">
+                            <h3 class="work__title">實時監測機械運行數據並記錄歷史故障數據</h3>
+                            <div>特徵工程：從原始數據中提取出對模型訓練有用的特徵，使得機器學習算法能更好地學習數據中的模式。<br><br>資料標記：標註故障前的數據樣本為「即將故障」，正常運行樣本為「正常運行」，讓算法學會區分兩者。<br><br>機器學習模型訓練：訓練模型找到「數據特徵」與「故障發生」之間的對應模式，並使用監督式學習算法(如隨機森林)，透過多棵決策樹判斷設備的狀態，例如：當振動幅度 > X 且溫度 > Y，模型判斷此部件故障概率為Z%，發出警告。</div>
+                            <a href="決策樹.png" class="work__link-button link-button">決策樹</a>
+                            <div>or <a href="https://www.canva.com/design/DAGYxTUmTjw/v2j4u4bkLiaUJySOZrGvaA/view?utm_content=DAGYxTUmTjw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4dec3beef9" class="work__link link-text">查看我們的簡報以獲取更多資訊</a></div>
+                        </div>
+                    </div>
+                    <div class="wrapper-work">
+                        <img src="電腦視覺.jpg" alt="電腦視覺">
+                        <div class="wrapper-work-text">
+                            <h3 class="work__title">利用電腦視覺技術來輔助操作</h3>
+                            <div>圖像分割：電腦視覺通過深度學習模型對手術視野內的組織和器官進行分割，將關鍵區域進行高亮標記，讓醫師更加清楚地識別手術區域。<br><br>風險提示：當工具接近高風險區域（如主要血管或神經）時，系統能夠發出多種形式的警告，提醒醫師注意，例如：距離感知，電腦視覺系統實時計算工具與重要組織（如神經、血管）之間的距離。當距離小於設定的安全範圍時，發出警告。</div>
+                            <a href="圖像分割.png" class="work__link-button link-button">圖像分割</a>
+                            <div>or <a href="https://www.canva.com/design/DAGYxTUmTjw/v2j4u4bkLiaUJySOZrGvaA/view?utm_content=DAGYxTUmTjw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4dec3beef9" class="work__link link-text">查看我們的簡報以獲取更多資訊</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content wrapper-content">
+            <div>
+                計算機概論第十組
+                <div class="footer__license">林佑謙<br>何承澔<br>李齊<br>鄭吉廷</div>
+            </div>
+            <nav>
+                <div class="footer-nav-list">
+                    <div class="footer-nav-list__title">SOCIAL</div>
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=ZcOa0JwaFAPmeb0z" class="footer-nav-list__text link-text">YouTube</a>
+                    <a href="https://www.instagram.com/tsai_ingwen?igsh=MWhzNm9oMXVsMHJv" class="footer-nav-list__text link-text">Instagram</a>
+                    <a href="https://www.facebook.com/li.bai.qi.2024" class="footer-nav-list__text link-text">Facebook</a>
+                </div>
+                <div class="footer-nav-list">
+                    <div class="footer-nav-list__title">CONTACT</div>
+                    <div class="footer-nav-list__text">0900-114-514</div>
+                    <a href="mailto:wchi@nccu.edu.tw" class="footer-nav-list__text link-text">wchi@nccu.edu.tw</a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
